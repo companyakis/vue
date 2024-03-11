@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue 2024 Mustafa Buyukdereli</title>
+    <script src="https://unpkg.com/vue@3.4.9/dist/vue.global.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Let's learn Vue</h1>
+    </header>
+
+    <section id="vuebasics">
+
+      <p>Enter your name:</p>
+      <input type="text" v-on:input="setFirstName($event)">
+
+      <p>Enter your last name:</p>
+      <input type="text" v-on:input="setLastName($event)">
+
+      <h3>You are {{firstName}} {{lastName}}.</h3>
+
+      <p>Enter year information</p>
+      <input type="text" v-on:input="setYear($event)">
+
+      <h3>{{year}} will be your year!</h3>
+
+    </section>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
