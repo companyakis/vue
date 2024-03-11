@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue 2024 Mustafa Buyukdereli</title>
+    <script src="https://unpkg.com/vue@3.4.9/dist/vue.global.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Let's learn Vue</h1>
+    </header>
+
+    <section id="vuebasics">
+      <h4>f(x) = 2 * x + 3 and g(x) = 2 * x - 3</h4>
+
+      <button v-on:click="counterUp(3)">f(3)</button>
+
+      <h5>{{counter}}</h5>
+
+      <button v-on:click="counterDown(3)">g(3)</button>
+    </section>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
