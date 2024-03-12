@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Js </title>
+    <script src="https://unpkg.com/vue@3.4.9/dist/vue.global.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="" />
+  </head>
+
+  <body>
+
+    <header>
+
+      <h1>Vue 2024 Mustafa Buyukdereli</h1>
+
+    </header>
+
+    <section id="basics">
+
+      <div>
+        
+        <p>Your name is {{name}}</p>
+
+        <input v-model="name" />
+
+        <br><br>
+
+        <button v-on:click="resetName()">Reset Name</button>
+
+      </div>
+
+    </section>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
