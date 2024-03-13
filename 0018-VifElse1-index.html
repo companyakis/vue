@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Js</title>
+    <script src="https://unpkg.com/vue@3.4.9/dist/vue.global.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="" />
+  </head>
+
+  <body>
+    <header>
+      <h1>2024 Blueprint</h1>
+    </header>
+
+    <section id="basics">
+      <h3>Important Subjects</h3>
+
+      <div>
+        <input type="text" v-model="subject" />
+        <br><br>
+        <button v-on:click="addSubject()">Add Subject</button>
+      </div>
+
+      <p v-if="subjects.length === 0">No subject added!</p>
+
+      <ul v-else-if="subjects.length > 0">
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum dolor.</li>
+      </ul>
+
+      <p v-else>Think again!</p>
+    </section>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
